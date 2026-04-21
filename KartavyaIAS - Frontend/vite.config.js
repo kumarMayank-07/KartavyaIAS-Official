@@ -7,4 +7,7 @@ export default defineConfig({
   server: {
     port: 4000,
   },
+  build: {
+    outDir: '/var/www/kartavyaias/dist'
+  }
 })
