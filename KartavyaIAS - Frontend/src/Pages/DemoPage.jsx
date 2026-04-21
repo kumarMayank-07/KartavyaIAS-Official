@@ -44,6 +44,7 @@ function DemoPage() {
   useEffect(() => {
     if (selectedCategory) {
       setLoading(true);
+      console.log(`${API_BASE}/api/videos?category=${encodeURIComponent(selectedCategory)}`);
       fetch(`${API_BASE}/api/videos?category=${encodeURIComponent(selectedCategory)}`)
         .then((res) => res.json())
         .then((data) => {
