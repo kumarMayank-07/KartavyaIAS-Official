@@ -14,6 +14,8 @@ import DemoPdfsPage from "./Pages/DemoPdfsPage";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsOfService from "./Pages/TermsOfService";
 import BetiyanPage from "./Pages/BetiyanPage";
+import SyllabusPage from './pages/SyllabusPage';
+
 
 
 function App() {
@@ -34,6 +36,7 @@ function App() {
         <Route path="/contact" element={<Enroll />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/syllabus" element={<SyllabusPage />} />
       </Routes>
       <Footer />
     </Router>

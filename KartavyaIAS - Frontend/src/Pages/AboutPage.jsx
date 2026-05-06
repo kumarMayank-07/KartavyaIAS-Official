@@ -13,6 +13,7 @@ import founderShort from '../Assets/About_Shorts/IMG_2969.MOV';
 function AboutPage() {
     const [selectedAddress, setSelectedAddress] = useState(null);
     const [showJourney, setShowJourney] = useState(false);
+    const [showMap, setShowMap] = useState(false);
 
     return (
         <div>
@@ -169,7 +170,7 @@ function AboutPage() {
                             <div className="w-14 h-14 bg-brand-red/20 text-brand-red-light rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300 group-hover:bg-brand-red group-hover:text-white shadow-inner">
                                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6"></path></svg>
                             </div>
-                            <h4 className="text-xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">Doctorate in economics</h4>
+                            <h4 className="text-xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">Doctorate in Economics</h4>
                             <p className="text-brand-surface/60 text-sm leading-relaxed">Deep command over India’s economic framework, directly aligning with core UPSC civil service subjects.</p>
                         </div>
 
@@ -189,7 +190,13 @@ function AboutPage() {
                                 <h4 className="text-2xl font-black text-white mb-1 mt-3 group-hover:text-brand-gold-light transition-colors">New Delhi</h4>
                                 <p className="text-brand-surface/90 text-sm mb-6 leading-relaxed">The historic core and main hub of our civil services preparation excellence.</p>
                             </div>
-                            <button onClick={() => setSelectedAddress({ city: 'New Delhi', text: 'B-7/8, Shop-4, Bhandari House, Near UCO Bank, Mukherjee Nagar, New Delhi' })} className="bg-white text-brand-red-dark hover:bg-brand-surface font-extrabold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-sm transition w-full shadow-lg hover:shadow-xl relative z-10 mt-auto">
+                            <button onClick={() => {
+  setSelectedAddress({
+    city: "New Delhi",
+    text: "101,B-14, First Floor, Dr Mukherjee Nagar, Delhi, 110009",
+  });
+//   setShowMap(false);
+}} className="bg-white text-brand-red-dark hover:bg-brand-surface font-extrabold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-sm transition w-full shadow-lg hover:shadow-xl relative z-10 mt-auto">
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 View Address
                             </button>
@@ -202,7 +209,7 @@ function AboutPage() {
                                 <h4 className="text-2xl font-black text-white mb-1 mt-3 group-hover:text-brand-gold-light transition-colors">Prayagraj</h4>
                                 <p className="text-brand-surface/80 text-sm mb-6 leading-relaxed">Operating right from the heart of India's current UPSC Hub!</p>
                             </div>
-                            <button onClick={() => setSelectedAddress({ city: 'Prayagraj', text: 'Opposite Swaraj Bhawan (Anand Bhawan), Salori Shukla Market, Prayagraj' })} className="bg-brand-gold hover:bg-yellow-400 text-[#001740] font-extrabold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-sm transition w-full shadow-lg hover:shadow-xl relative z-10 mt-auto">
+                            <button onClick={() => setSelectedAddress({ city: 'Prayagraj', text: '419/347, Infront of Anand Bhawan Gate No.1, Colonelganj, Prayagraj, 211002' })} className="bg-brand-gold hover:bg-yellow-400 text-[#001740] font-extrabold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-sm transition w-full shadow-lg hover:shadow-xl relative z-10 mt-auto">
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 View Address
                             </button>
@@ -585,42 +592,77 @@ function AboutPage() {
                 </div>
             </section>
             {/* Popup Modal for Branch Addresses */}
-            {selectedAddress && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity">
-                    <div className="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl transform transition-transform scale-100 opacity-100 border border-gray-100 relative">
-                        {/* Close button */}
-                        <button
-                            onClick={() => setSelectedAddress(null)}
-                            className="absolute top-4 right-4 text-gray-400 hover:text-brand-red bg-gray-50 hover:bg-brand-red/10 h-8 w-8 rounded-full flex items-center justify-center transition-colors"
-                        >
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                        </button>
+           {selectedAddress && (
+  <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+    
+    <div className="bg-white rounded-3xl p-6 max-w-2xl w-full shadow-2xl border border-gray-100 relative">
 
-                        <div className="flex justify-center mb-5">
-                            <div className="w-14 h-14 bg-brand-gold/20 text-[#001740] rounded-2xl flex items-center justify-center">
-                                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                            </div>
-                        </div>
+      {/* ✅ GLOBAL CLOSE (works for both states) */}
+      <button
+        onClick={() => {
+          setSelectedAddress(null);
+          setShowMap(false);
+        }}
+        className="absolute top-4 right-4 text-gray-400 hover:text-brand-red bg-gray-50 hover:bg-brand-red/10 h-8 w-8 rounded-full flex items-center justify-center transition-colors z-10"
+      >
+        ✕
+      </button>
 
-                        <h3 className="text-2xl font-black text-[#001740] text-center mb-2">
-                            {selectedAddress.city} Campus
-                        </h3>
+      {/* 🔥 STEP 1 → ADDRESS VIEW */}
+      {!showMap && (
+        <>
+          <div className="flex justify-center mb-5">
+            <div className="w-14 h-14 bg-brand-gold/20 text-[#001740] rounded-2xl flex items-center justify-center">
+              📍
+            </div>
+          </div>
 
-                        <div className="w-12 h-1 bg-brand-red mx-auto rounded-full mb-6"></div>
+          <h3 className="text-2xl font-black text-[#001740] text-center mb-2">
+            {selectedAddress.city} Campus
+          </h3>
 
-                        <p className="text-gray-600 text-center text-lg leading-relaxed mb-8">
-                            {selectedAddress.text}
-                        </p>
+          <div className="w-12 h-1 bg-brand-red mx-auto rounded-full mb-6"></div>
 
-                        <button
-                            onClick={() => setSelectedAddress(null)}
-                            className="w-full bg-[#001740] text-white font-bold py-3 px-4 rounded-xl hover:bg-[#002670] transition-colors shadow-lg"
-                        >
-                            Done
-                        </button>
-                    </div>
-                </div>
-            )}
+          <p className="text-gray-600 text-center text-lg leading-relaxed mb-8">
+            {selectedAddress.text}
+          </p>
+
+          {/* ✅ BUTTON → SWITCH TO MAP */}
+          <button
+            onClick={() => setShowMap(true)}
+            className="w-full bg-[#001740] text-white font-bold py-3 px-4 rounded-xl hover:bg-[#002670] transition-colors shadow-lg"
+          >
+            Open Map
+          </button>
+        </>
+      )}
+
+      {/* 🔥 STEP 2 → MAP VIEW */}
+      {showMap && (
+        <>
+          <h3 className="text-xl font-bold mb-4 text-center">
+            {selectedAddress.city} Location
+          </h3>
+
+          <iframe
+            title="Map"
+            width="100%"
+            height="400"
+            className="rounded-xl"
+            loading="lazy"
+            allowFullScreen
+            src={`https://www.google.com/maps?q=${encodeURIComponent(
+              selectedAddress.text
+            )}&output=embed`}
+          ></iframe>
+        </>
+      )}
+
+    </div>
+  </div>
+)}
+
+            
         </div>
     );
 }

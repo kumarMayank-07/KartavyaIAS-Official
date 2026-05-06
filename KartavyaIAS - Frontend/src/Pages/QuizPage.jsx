@@ -14,7 +14,7 @@ const QuizPage = () => {
     const [quizStarted, setQuizStarted] = useState(false);
 
     const categories = [
-        'History', 'Geography', 'Polity', 'economics',
+        'Economy', 'History', 'Geography', 'Polity', 
         'Science & Tech', 'Environment', 'Current Affairs',
         'Ethics', 'Essay', 'CSAT'
     ];
@@ -77,7 +77,7 @@ const QuizPage = () => {
                     <Link to="/" className="text-sm font-bold flex items-center gap-2 hover:text-brand-gold transition-colors">
                         ← Back to Home
                     </Link>
-                    <h1 className="font-black text-xl tracking-tight">KARTAVYA <span className="text-brand-gold">MCQ PORTAL</span></h1>
+                    <h1 className="font-black text-xl tracking-tight">KARTAVYA IAS &nbsp;&nbsp;  <span className="text-brand-gold">MCQ PORTAL</span></h1>
                 </div>
             </div>
 

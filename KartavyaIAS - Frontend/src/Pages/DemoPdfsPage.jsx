@@ -5,13 +5,13 @@ import { Helmet } from 'react-helmet'
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 const categories = [
-    'History', 'Geography', 'Polity', 'economics',
+    'Economy', 'History', 'Geography', 'Polity', 
     'Science & Tech', 'Environment', 'Current Affairs',
     'Ethics', 'Essay', 'CSAT'
 ];
 
 const categoryIcons = {
-    'History': '🏛️', 'Geography': '🌍', 'Polity': '⚖️', 'economics': '📊',
+    'Economy': '📊','History': '🏛️', 'Geography': '🌍', 'Polity': '⚖️', 
     'Science & Tech': '🔬', 'Environment': '🌱', 'Current Affairs': '📰',
     'Ethics': '🧭', 'Essay': '✍️', 'CSAT': '🧮'
 };
@@ -55,7 +55,7 @@ const DemoPdfsPage = () => {
                     <Link to="/" className="text-sm font-bold flex items-center gap-2 hover:text-brand-gold transition-colors">
                         ← Back to Home
                     </Link>
-                    <h1 className="font-black text-xl tracking-tight">KARTAVYA <span className="text-brand-gold">FREE PDFs</span></h1>
+                    <h1 className="font-black text-xl tracking-tight">KARTAVYA IAS &nbsp;&nbsp; <span className="text-brand-gold">FREE PDFs</span></h1>
                 </div>
             </div>
 

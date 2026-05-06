@@ -14,7 +14,7 @@ const DemoMaterialsPage = ({ adminToken }) => {
   const [filterCategory, setFilterCategory] = useState('All');
 
   const categories = [
-    'History', 'Geography', 'Polity', 'economics',
+    'History', 'Geography', 'Polity', 'Economy',
     'Science & Tech', 'Environment', 'Current Affairs',
     'Ethics', 'Essay', 'CSAT'
   ];

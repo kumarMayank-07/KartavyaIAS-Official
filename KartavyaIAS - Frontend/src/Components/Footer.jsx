@@ -75,8 +75,7 @@ function Footer() {
             </div>
             <div>
               <p className="text-white font-semibold text-sm">Prayagraj</p>
-              <p className="text-brand-surface/60 text-sm mt-1 leading-relaxed">Front of
-                Aanand Bhawan,Katra, Prayagraj, UP 211002</p>
+              <p className="text-brand-surface/60 text-sm mt-1 leading-relaxed">419/347, Infront of Anand Bhawan Gate No.1, Colonelganj, Prayagraj, 211002</p>
             </div>
 
           </div>
@@ -84,7 +83,7 @@ function Footer() {
 
       </div>
 
-      <div className="border-t border-white/10 bg-[#001740] py-6 relative z-10">
+      <div className="border-t border-white/10 bg-[#001740] pt-4 relative z-10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-brand-surface/50 text-sm text-center md:text-left">
             © {new Date().getFullYear()} Kartavya IAS. All rights reserved.
@@ -94,6 +93,13 @@ function Footer() {
             <Link to="/terms-of-service" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
+
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-4 border-t border-white mt-4">
+          <p className="text-brand-surface/50 text-sm text-center md:text-center py-1">
+            Managed By <a href="https://www.instagram.com/proworktech" className="hover:underline">Prowork Tech</a>
+          </p>
+        </div>
+
       </div>
     </footer>
   );

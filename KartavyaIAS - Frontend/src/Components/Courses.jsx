@@ -8,49 +8,69 @@ const staticCourses = [
   {
     id: 1,
     title: "UPSC CSE Foundation",
-    description: "Comprehensive coverage of Prelims & Mains with dedicated mentorship.",
-    duration: "12 Months",
-    mode: "Offline / Live Online",
-    price: "₹85,000",
+    description: "Comprehensive coverage of Prelims & Mains with dedicated mentorship for Interview.",
+    duration: "18 Months",
+    mode: "Online - Live & Recorded Classes",
+    price: "₹18,000",
     popular: true,
     syllabus: [
       "History, Art & Culture",
       "Geography & Environment",
       "Indian Polity & Governance",
-      "economics & Agriculture",
+      "Economy & Agriculture",
       "Science & Tech, Current Affairs"
     ],
     feeStructure: [
-      "Registration: ₹5,000",
-      "1st Installment: ₹40,000",
-      "2nd Installment: ₹40,000"
+      "Registration: ₹9,000",
+      "1st Installment: ₹4,500",
+      "2nd Installment: ₹4,500"
     ],
     features: "Daily Answer Writing, Personal Mentorship, Study Material"
   },
   {
     id: 2,
-    title: "Prelims Test Series",
+    title: "Prelims Test Series (Subject Wise)",
     description: "Strictly aligned with the latest UPSC pattern. Includes All India Ranking.",
     duration: "3 Months",
     mode: "Online",
-    price: "₹5,000",
+    price: "₹1,500",
     popular: false,
     syllabus: [
-      "14 Sectional Tests",
-      "6 Full Length GS Tests",
-      "4 Full Length CSAT Tests"
+      "60 Subject Wise Tests",
+      "52 GS Paper Tests (include GS 1,2,3,4)",
+      "8 Full Length CSAT Tests",
+      "Answer Solving After Test"
     ],
     feeStructure: [
-      "One Time Payment: ₹5,000"
+      "One Time Payment: ₹1,500"
     ],
     features: "Detailed Solutions, All India Ranking, Performance Analytics"
   },
   {
     id: 3,
+    title: "Prelims Test Series (Complete Syllabus)",
+    description: "Full Syllabus. Full-Length Tests. Real UPSC Competition with All India Ranking.",
+    duration: "3 Months",
+    mode: "Online",
+    price: "₹3,000",
+    popular: false,
+    syllabus: [
+      "20 Complete Syllabus Tests",
+      "UPSC Level Questions",
+      "Answer Solving After Test"
+    ],
+    feeStructure: [
+      "One Time Payment: ₹3,000"
+    ],
+    features: "Detailed Solutions, All India Ranking, Performance Analytics"
+  },
+ 
+  {
+    id: 4,
     title: "Interview Guidance",
     description: "Mock interviews by former bureaucrats and experts.",
     duration: "1 Month",
-    mode: "Offline (Prayagraj & ND)",
+    mode: "Offline (Prayagraj & New Delhi)",
     price: "₹10,000",
     popular: false,
     syllabus: [
@@ -132,7 +152,7 @@ ${leadData.email ? `Email: ${leadData.email}` : ''}
 Please share admission details.`;
 
     window.open(
-      `https://wa.me/9450066558?text=${encodeURIComponent(message)}`,
+      `https://wa.me/9161355675?text=${encodeURIComponent(message)}`,
       '_blank'
     );
 
