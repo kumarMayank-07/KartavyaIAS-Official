@@ -14,7 +14,7 @@ import DemoPdfsPage from "./Pages/DemoPdfsPage";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsOfService from "./Pages/TermsOfService";
 import BetiyanPage from "./Pages/BetiyanPage";
-import SyllabusPage from './pages/SyllabusPage';
+import SyllabusPage from './Pages/SyllabusPage';
 
 
 
