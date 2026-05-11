@@ -8,7 +8,7 @@ const staticCourses = [
   {
     id: 1,
     title: "UPSC CSE Foundation",
-    description: "Comprehensive coverage of Prelims & Mains with dedicated mentorship for Interview.",
+    description: "Comprehensive coverage of Prelims & Mains with dedicated mentorship for Interview. \n\n Start Date: 26th May 2026",
     duration: "18 Months",
     mode: "Online - Live & Recorded Classes",
     price: "₹18,000",
@@ -28,9 +28,31 @@ const staticCourses = [
     features: "Daily Answer Writing, Personal Mentorship, Study Material"
   },
   {
-    id: 2,
+  id: 2,
+  title: "Special Program Astitva",
+  description: "Astitva initiative providing free education for girls with dedicated mentorship for Prelims, Mains, and Interview preparation. \n\n Start Date: 26th May 2026",
+  duration: "18 Months",
+  mode: "Online - Live & Recorded Classes",
+  price: "₹0",
+  popular: true,
+  syllabus: [
+    "History, Art & Culture",
+    "Geography & Environment",
+    "Indian Polity & Governance",
+    "Economy & Agriculture",
+    "Science & Tech, Current Affairs"
+  ],
+  feeStructure: [
+    "Registration: ₹0",
+    "1st Installment: ₹0",
+    "2nd Installment: ₹0"
+  ],
+  features: "Daily Answer Writing, Personal Mentorship, Study Material"
+},
+  {
+    id: 3,
     title: "Prelims Test Series (Subject Wise)",
-    description: "Strictly aligned with the latest UPSC pattern. Includes All India Ranking.",
+    description: "Strictly aligned with the latest UPSC pattern. Includes All India Ranking. \n\n Start Date: 26th May 2026",
     duration: "3 Months",
     mode: "Online",
     price: "₹1,500",
@@ -47,9 +69,9 @@ const staticCourses = [
     features: "Detailed Solutions, All India Ranking, Performance Analytics"
   },
   {
-    id: 3,
+    id: 4,
     title: "Prelims Test Series (Complete Syllabus)",
-    description: "Full Syllabus. Full-Length Tests. Real UPSC Competition with All India Ranking.",
+    description: "Full Syllabus. Full-Length Tests. Real UPSC Competition with All India Ranking. \n\n Start Date: 26th May 2026",
     duration: "3 Months",
     mode: "Online",
     price: "₹3,000",
@@ -66,9 +88,9 @@ const staticCourses = [
   },
  
   {
-    id: 4,
+    id: 5,
     title: "Interview Guidance",
-    description: "Mock interviews by former bureaucrats and experts.",
+    description: "Mock interviews by former bureaucrats and experts. \n\n Start Date: 26th May 2026",
     duration: "1 Month",
     mode: "Offline (Prayagraj & New Delhi)",
     price: "₹10,000",
@@ -212,7 +234,7 @@ Please share admission details.`;
                   {course.title}
                 </h4>
 
-                <p className="text-gray-600 text-sm mb-8 leading-relaxed flex-1 font-medium">
+                <p className="text-gray-600 text-sm mb-8 leading-relaxed flex-1 font-medium whitespace-pre-line">
                   {course.description}
                 </p>
 
