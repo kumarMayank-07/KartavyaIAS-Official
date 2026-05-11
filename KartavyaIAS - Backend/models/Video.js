@@ -18,7 +18,7 @@ const videoSchema = new mongoose.Schema({
       'History',
       'Geography',
       'Polity',
-      'economics',
+      'Economy',
       'Science & Tech',
       'Environment',
       'Current Affairs',

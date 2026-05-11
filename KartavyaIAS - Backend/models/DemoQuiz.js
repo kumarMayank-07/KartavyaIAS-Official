@@ -25,7 +25,7 @@ const demoQuizSchema = new mongoose.Schema({
             'History',
             'Geography',
             'Polity',
-            'economics',
+            'Econony',
             'Science & Tech',
             'Environment',
             'Current Affairs',
