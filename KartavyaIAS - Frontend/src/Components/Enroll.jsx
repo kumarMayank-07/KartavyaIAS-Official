@@ -72,7 +72,7 @@ function Enroll() {
                   </div>
                   <div>
                     <p className="text-xs text-brand-surface/60 font-medium uppercase tracking-wider">Direct Helpline</p>
-                    <p className="font-bold text-base sm:text-lg">+91 98765 43210</p>
+                    <p className="font-bold text-base sm:text-lg">+91 9161355675</p>
                   </div>
                 </div>
 
@@ -82,7 +82,7 @@ function Enroll() {
                   </div>
                   <div className="min-w-0">
                     <p className="text-xs text-brand-surface/60 font-medium uppercase tracking-wider">Email Us</p>
-                    <p className="font-bold text-base sm:text-lg break-all">admissions@kartavyaias.com</p>
+                    <p className="font-bold text-base sm:text-lg break-all">kartavyaeducationforall@gmail.com</p>
                   </div>
                 </div>
               </div>
