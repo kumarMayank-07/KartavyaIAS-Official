@@ -5,6 +5,7 @@ import Courses from "../Components/Courses";
 import About from "../Components/About";
 import Enroll from "../Components/Enroll";
 import Footer from "../Components/Footer";
+import { Helmet } from 'react-helmet'
 import { Link } from "react-router-dom";
 import FreeEducation from '../Assets/Freeeducation.jpeg';
 import Close from '../Assets/close.png';
@@ -49,6 +50,23 @@ function HomePage() {
       )}
 
       <main>
+         <Helmet>
+                <title>Kartavya IAS - Home</title>
+                <meta name="description" content="Kartavya IAS is a premier institute for UPSC CSE preparation, offering comprehensive courses, expert guidance, and a structured approach to help aspirants achieve their goals." />
+                <meta name="keywords" content="UPSC CSE, IAS preparation, Kartavya IAS, UPSC courses, Civil Services Exam, UPSC coaching, IAS coaching, UPSC syllabus" />
+                <meta name="author" content="Kartavya IAS" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="canonical" href="https://www.kartavyaias.com/" />
+                <meta property="og:title" content="Kartavya IAS - Home" />
+                <meta property="og:description" content="Kartavya IAS is a premier institute for UPSC CSE preparation, offering comprehensive courses, expert guidance, and a structured approach to help aspirants achieve their goals." />
+                <meta property="og:image" content="https://www.kartavyaias.com/og-image.jpg" />
+                <meta property="og:url" content="https://www.kartavyaias.com/" />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Kartavya IAS - Home" />
+                <meta name="twitter:description" content="Kartavya IAS is a premier institute for UPSC CSE preparation, offering comprehensive courses, expert guidance, and a structured approach to help aspirants achieve their goals." />
+                <meta name="twitter:image" content="https://www.kartavyaias.com/twitter-image.jpg" />
+            </Helmet>
         <Hero />
         <Courses isHomePage={true} />
 
