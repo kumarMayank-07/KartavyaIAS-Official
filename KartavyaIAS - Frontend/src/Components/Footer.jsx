@@ -94,11 +94,11 @@ function Footer() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-4 border-t border-white mt-4">
+        {/* <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-4 border-t border-white mt-4">
           <p className="text-brand-surface/50 text-sm text-center md:text-center py-1">
             Managed By <a href="https://www.instagram.com/proworktech" className="hover:underline">Prowork Tech</a>
           </p>
-        </div>
+        </div> */}
 
       </div>
     </footer>
